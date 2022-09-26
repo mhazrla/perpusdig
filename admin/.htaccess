@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ErrorDocument 404 http://localhost/perpusdig/admin/pages/views/v_404
+
+RewriteRule ^dashboard$ home.php [L]
+RewriteRule ^anggota$ pages/views/v_anggota.php [L]
+RewriteRule ^buku$ pages/views/v_buku.php [L]
+RewriteRule ^penerbit$ pages/views/v_penerbit.php [L]
+RewriteRule ^administrator$ pages/views/v_administrator.php [L]
+RewriteRule ^kategori$ pages/views/v_kategori.php [L]
+RewriteRule ^laporan$ pages/views/v_laporan.php [L]
+
+#
+
+RewriteRule ^peminjaman$ pages/views/v_peminjaman.php [L]
+
+RewriteRule ^logout$ logout.php [L]
+</IfModule>

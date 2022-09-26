@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ErrorDocument 404 http://localhost/perpusdig/404
+
+RewriteRule ^dashboard$ home.php [L]
+RewriteRule ^peminjaman$ pages/views/v_peminjaman.php [L]
+RewriteRule ^pengembalian$ pages/views/v_pengembalian.php [L]
+RewriteRule ^profile$ pages/views/v_profil.php [L]
+
+RewriteRule ^logout$ logout.php [L]
+</IfModule>
